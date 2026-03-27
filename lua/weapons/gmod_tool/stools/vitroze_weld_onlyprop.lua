@@ -226,7 +226,7 @@ end)
 
 hook.Add("OnPhysgunPickup", "VitrozeWeldOnlyPropPickup", function(ply, ent)
 	if IsValid(ent) and ent.VitrozeWeldTarget and ent.bVitrozeWeldChildren and ent:GetCollisionGroup() ~= COLLISION_GROUP_WORLD then
-		ent:SetCollisionGroup( COLLISION_GROUP_NONE )
+		ent:SetCollisionGroup( COLLISION_GROUP_WORLD )
 	end
 end)
 
